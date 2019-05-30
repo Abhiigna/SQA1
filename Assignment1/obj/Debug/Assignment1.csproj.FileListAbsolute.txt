@@ -1,2 +1,6 @@
-S:\Sem 2\SQA\Assignment1\Assignment1\obj\Debug\Assignment1.csprojAssemblyReference.cache
 S:\Sem 2\SQA\Assignment1\Assignment1\obj\Debug\Assignment1.csproj.CoreCompileInputs.cache
+S:\Sem 2\SQA\Assignment1\Assignment1\bin\Debug\Assignment1.exe.config
+S:\Sem 2\SQA\Assignment1\Assignment1\bin\Debug\Assignment1.exe
+S:\Sem 2\SQA\Assignment1\Assignment1\bin\Debug\Assignment1.pdb
+S:\Sem 2\SQA\Assignment1\Assignment1\obj\Debug\Assignment1.exe
+S:\Sem 2\SQA\Assignment1\Assignment1\obj\Debug\Assignment1.pdb

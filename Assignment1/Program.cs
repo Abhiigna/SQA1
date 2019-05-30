@@ -8,77 +8,105 @@ namespace Assignment1
 {
     class Program
     {
-        public static int validateMenuSelection()
+        public static void Main(String[] arg)
         {
-            string userInput = "";
-            bool validMenuSelect = false;
-
-            while (validMenuSelect == false)
+            Rectangle rec = new Rectangle();
+            try
             {
-                Console.WriteLine("1 = Get Rectangle Length");
-                Console.WriteLine("2 = Change Rectangle Length");
-                Console.WriteLine("3 = Get Rectangle Width");
-                Console.WriteLine("4 = Change Rectangle Width");
-                Console.WriteLine("5 = Get Rectangle Perimeter");
-                Console.WriteLine("6 = Get Rectangle Area");
-                Console.WriteLine("7 = Exit\n");
-
-                Console.WriteLine("Please enter your option:\n");
-                userInput = Console.ReadLine();
-
-                if (userInput != "1" &&
-                   userInput != "2" &&
-                   userInput != "3" &&
-                   userInput != "4" &&
-                   userInput != "5" &&
-                   userInput != "6" &&
-                   userInput != "7")
+                while (true)
                 {
-                    Console.WriteLine("Option invalid:\n");
+                    Console.WriteLine("1.Get Rectangle Length\n2.Change Rectangle Lenth\n3.Get Rectangle width\n4.Change Rectangle Width");
+                    Console.WriteLine("5.Get Rectangle perimeter\n6.Get Rectengle Area\n7. Exit");
 
-                }
-                else
-                {
-                    validMenuSelect = true;
+                    Console.WriteLine("Enter your choice:");
+                    string option = Console.ReadLine();
+                    if (option == "7")
+                    {
+                        break;
+                    }
+
+                    switch (option)
+                    {
+                        case "1":
+                            Console.WriteLine("Length of Rectangle :{0}", rec.GetLength());
+                            break;
+                        case "2":
+                            int number = 1;
+                            bool isValid = false;
+                            string length = "";
+
+                            while (isValid == false)
+                            {
+                                Console.WriteLine("Please enter the length of your rectangle:");
+                                length = Console.ReadLine();
+                                Console.WriteLine();
+
+                                bool result = int.TryParse(length, out number);
+
+                                if (result == false)
+                                {
+                                    Console.WriteLine("Invalid Input, please try again.\n");
+                                }
+                                else if (number < 0) 
+                                {
+                                    Console.WriteLine("Number is less than 0, please give a number greater than 0.\n");
+                                }
+                                else
+                                {
+                                    isValid = true;
+                                }
+                                 rec.SetLenght(number);
+                            }
+                           
+
+                            break;
+                        case "3":
+                            Console.WriteLine("Width of Rectangle :{0}", rec.GetWidth());
+                            break;
+                        case "4":
+                            int number1 = 1;
+                            bool isValidwidth = false;
+
+                            while (isValidwidth == false)
+                            {
+                                Console.WriteLine("Please enter the width of your rectangle:");
+                                string width = Console.ReadLine();
+                                Console.WriteLine();
+
+                                bool result = int.TryParse(width, out number1);
+
+                                if (result == false)
+                                {
+                                    Console.WriteLine("Invalid Input, please try again.\n");
+                                }
+                                else if (number1 < 0)
+                                {
+                                    Console.WriteLine("Number is less than 0, please give a number greater than 0.\n");
+                                }
+                                else
+                                {
+                                    isValidwidth = true;
+                                }
+                                rec.SetWidth(number1);
+                            }
+
+                            break;
+                        case "5":
+                            Console.WriteLine("Perimeter of Rectangle :{0}", rec.GetPerimeter());
+                            break;
+                        case "6":
+                            Console.WriteLine("Area of Rectangle :{0}", rec.GetArea());
+                            break;
+                        
+                    }
+                    
                 }
             }
-            Console.WriteLine();
-            return int.Parse(userInput);
-        }
-
-        public static int validUserInput(string rectSide)
-        {
-            int number = 1;
-            bool isValid = false;
-
-            while (isValid == false)
+            catch(Exception ae)
             {
-                Console.WriteLine($"Please enter the {rectSide} of your rectangle:");
-                string userInput = Console.ReadLine();
-                Console.WriteLine();
-
-                bool result = int.TryParse(userInput, out number);
-
-                if (result == false)
-                {
-                    Console.WriteLine("Invalid Input, please try again.\n");
-                }
-                else if (number < 0)
-                {
-                    Console.WriteLine("Number is less than 0, please give a number greater than 0.\n");
-                }
-                else
-                {
-                    isValid = true;
-
-                }
-
+                Console.WriteLine("invalid input",ae);
             }
+
         }
-
-
-                
-
-
-}
+    }
 }

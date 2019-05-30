@@ -1,0 +1,12 @@
+S:\Sem 2\SQA\Assignment1\TestCase\bin\Debug\TestCase.dll
+S:\Sem 2\SQA\Assignment1\TestCase\bin\Debug\TestCase.pdb
+S:\Sem 2\SQA\Assignment1\TestCase\bin\Debug\Assignment1.exe
+S:\Sem 2\SQA\Assignment1\TestCase\bin\Debug\nunit.framework.dll
+S:\Sem 2\SQA\Assignment1\TestCase\bin\Debug\Assignment1.pdb
+S:\Sem 2\SQA\Assignment1\TestCase\bin\Debug\Assignment1.exe.config
+S:\Sem 2\SQA\Assignment1\TestCase\bin\Debug\nunit.framework.xml
+S:\Sem 2\SQA\Assignment1\TestCase\obj\Debug\TestCase.csprojAssemblyReference.cache
+S:\Sem 2\SQA\Assignment1\TestCase\obj\Debug\TestCase.csproj.CoreCompileInputs.cache
+S:\Sem 2\SQA\Assignment1\TestCase\obj\Debug\TestCase.csproj.CopyComplete
+S:\Sem 2\SQA\Assignment1\TestCase\obj\Debug\TestCase.dll
+S:\Sem 2\SQA\Assignment1\TestCase\obj\Debug\TestCase.pdb

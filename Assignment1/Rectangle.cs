@@ -47,7 +47,7 @@ namespace Assignment1
             return (width * 2) + (length * 2);
         }
 
-        public interface GetArea
+        public int GetArea()
     {
         return length * width;
     }
